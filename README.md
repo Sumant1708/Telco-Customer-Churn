@@ -18,7 +18,6 @@ The notebook uses the Telco Customer Churn dataset (`Telco-Customer-Churn.csv`),
 
 The target variable is `Churn` (`Yes` / `No`). The `customerID` column is removed before model training.
 
-> The CSV is not included in this repository by default. Place `Telco-Customer-Churn.csv` in the parent directory relative to the notebook, or update the file path in the data-loading cell.
 
 ## Workflow
 
@@ -48,7 +47,6 @@ The target variable is `Churn` (`Yes` / `No`). The `customerID` column is remove
 
 6. **KNN feature-selection experiment**
    - Evaluate KNN across different neighbor counts.
-   - Use `SelectKBest` with the ANOVA F-test to examine performance with different numbers of selected features.
 
 ## Results
 
@@ -124,3 +122,4 @@ The notebook evaluates KNN with different feature counts using 5-fold stratified
 ## Key Takeaway
 
 This project demonstrates that model evaluation goes beyond accuracy. ROC-AUC supports ranking comparisons, precision and recall expose classification trade-offs, threshold analysis reflects different decision costs, and calibration analysis checks whether predicted probabilities align with observed outcomes.
+
